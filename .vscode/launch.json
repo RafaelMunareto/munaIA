@@ -8,6 +8,19 @@
             "program": "${workspaceFolder}/manage.py",
             "args": ["runserver"],
             "django": true
+        },
+        {
+            "name": "Edge: Django",
+            "type": "pwa-msedge",
+            "request": "launch",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Django Full Debug",
+            "configurations": ["Django", "Edge: Django"]
         }
     ]
 }

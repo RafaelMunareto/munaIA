@@ -2,5 +2,6 @@ from django.urls import path
 from .controller import *
 
 urlpatterns = [
-    path('', supervisionada.index, name='supervisionada'),
+    path('', controllers.index, name='home'),
+    path('processar_base/', controllers.processar_base, name='processar_base'),
 ]

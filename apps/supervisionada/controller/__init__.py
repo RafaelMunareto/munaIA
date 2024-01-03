@@ -1,3 +1,3 @@
-from .supervisionada import *
+from .controllers import *
 
 

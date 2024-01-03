@@ -1,4 +1,4 @@
-from home.models import Urls
+from supervisionada.models import Urls
 from django.db.models import Q
 
 def buscador(request):

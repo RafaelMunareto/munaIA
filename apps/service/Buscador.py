@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_list_or_404, get_object_or_404, redirect
-from home.models import Urls
+from supervisionada.models import Urls
 from django.contrib import auth, messages
 from datetime import date
 from service.Formata import *

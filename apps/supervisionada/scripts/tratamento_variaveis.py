@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
-from interativo_tratamento_variaveis import InterativoTratamentoVariaveis
+from ..scripts.interativo_tratamento_variaveis import InterativoTratamentoVariaveis
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import IncrementalPCA
 import pickle
-import constantes 
+import apps.supervisionada.scripts.constantes as constantes
+
 
 class TratamentoVariaveis:
     def __init__(self, file_path):

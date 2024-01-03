@@ -2,6 +2,8 @@ from tratamento_variaveis import TratamentoVariaveis
 from looping_algoritimos import LoopingAlgoritmos
 from maquina_comites import MaquinaDeComites
 from previsor import Previsor
+from analise import Analise
+
 import constantes 
 
 def processarBase():
@@ -23,7 +25,7 @@ def maquinaComites():
 
 
 def previsao():
-    preditor = Preditor(constantes.modelo_aplicado)
+    preditor = Previsor(constantes.modelo_aplicado)
     preditor.carregarModelo()
     preditor.salvarDataFrameComPrevisao(constantes.df_com_predicoes, constantes.results_df)
 

@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 import pickle
 from datetime import datetime
-import constantes
+import apps.supervisionada.scripts.constantes as constantes
+
 
 class InterativoTratamentoVariaveis:
     def __init__(self, df):
